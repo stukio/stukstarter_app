@@ -1,0 +1,197 @@
+// FORMS //
+
+.form-horizontal .form-group {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input {
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #d9d9de !important;
+  color: #0f2105;
+  font-size: 14px;
+  margin: 0;
+  padding: 6px 5px;
+}
+
+input:focus {
+  border-color: #00a0ff !important;
+  background-color: #FFF;
+  -webkit-box-shadow: #e8f6ff 0 0 5px;
+  -moz-box-shadow: #e8f6ff 0 0 5px;
+  -ms-box-shadow: #e8f6ff 0 0 5px;
+  -o-box-shadow: #e8f6ff 0 0 5px;
+  box-shadow: #e8f6ff 0 0 5px;
+  outline: none;
+}
+
+// CONTAINER
+
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+// BUTTONS
+
+.btn {
+  border-radius: 6px;
+  border: none !important;
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+.btn-md {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.btn-default {
+  border: 1px solid #ccc !important;
+}
+
+// THIS CSS SNINEPP TURNS YOUR WEBPAGES PRINTABLE
+
+@media print {
+  * {
+    background: none !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+
+    /* Images, vectors and such */
+    filter: Gray();              /* IE4-8: depreciated */
+    filter: url('desaturate.svg#grayscale'); /* SVG version for IE10, Firefox, Safari 5 and Opera */
+    -webkit-filter: grayscale(100%);     /* Chrome + Safari 6 */
+    -moz-filter: grayscale(100%);        /* Future proof */
+    -ms-filter: grayscale(100%);       /* Future proof */
+    -o-filter: grayscale(100%);        /* Future proof */
+    filter: grayscale(100%);         /* Future proof or polyfilled */
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; 
+  }
+
+  a[href="#"],
+  a[href="javascript:"] {
+    content: "";
+  }
+}
+
+// END PRINT
+
+// TABS OUTLINE
+
+.tabs dd > a, .tabs .tab-title > a{
+  outline: none;
+}
+
+// BODY STYLES //
+
+body,html{
+
+  height:100%;
+  width:100%;
+  text-rendering: optimizelegibility;
+
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+
+  -moz-tap-highlight-color:rgba(0,0,0,0); 
+  -moz-text-size-adjust: none;
+  -moz-font-smoothing: antialiased;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -ms-tap-highlight-color:rgba(0,0,0,0); 
+  -ms-text-size-adjust: none;
+  -ms-font-smoothing: antialiased;
+
+
+  font-feature-settings: 'lnum';
+  /* vendor-prefixes */
+  -moz-font-feature-settings: 'lnum=1';
+  -ms-font-feature-settings: 'lnum';
+  -webkit-font-feature-settings: 'lnum';
+  -o-font-feature-settings: 'lnum';
+}
+
+body {
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+  color: #0f2105;
+}
+
+// END STYLES
+
+// END FONT STYLES
+
+
+// GENERAL LINKS
+
+a {
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// END GENERAL LINKS
+
+
+// TEXT TOOLS
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+// Colors
+
+.white {
+  color: white;
+}
+
+a.white {
+  color: white !important;
+}
+
+.primary-color, a.primary-color {
+  color: $brand-primary !important;
+}
+
+.gray, a.gray {
+  color: gray !important;
+}

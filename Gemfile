@@ -43,3 +43,22 @@ group :development, :test do
   gem 'spring'
 end
 
+
+
+##### My Gems #####
+gem 'bootstrap-sass', '~> 3.3.5'
+gem "font-awesome-rails"
+gem 'devise'
+gem 'annotate'
+gem 'simple_form'
+gem 'bootstrap-wysihtml5-rails', github: 'nerian/bootstrap-wysihtml5-rails'
+gem 'date_validator'
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'braintree'
+gem 'delayed_job_active_record'
+gem "delayed_job_web"
+gem 'friendly_id', '~> 5.1.0' 
+gem 'cancancan', '~> 1.10'
+
+

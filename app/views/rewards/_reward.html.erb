@@ -1,0 +1,19 @@
+<% if can? :manage, reward %>
+	<div class="text-right">
+		<%= link_to 'Edit',   edit_project_reward_path(@project, reward) %>
+		<%= link_to 'Delete', project_reward_path(@project, reward), method: :delete, data: {confirm: "Are you sure?"} %>
+	</div>
+<% end %>
+
+<%= link_to "#", class: "reward" do %>
+	<div class="reward-box">
+		<p class="pledge">Pledge $<%= reward.value %> or more</p>
+		<p class="backers"><span class="primary-color"><i class="fa fa-cog"></i></span>20 backers</p>
+		<p class="description"><%= reward.description %></p>
+		<p class="time"><span class="grey">Estimated delivery:</span><br><%= reward.estimated_delivery %></p>
+		<div class="reward-hover">
+			Select this reward
+		</div>
+	</div>
+<% end %>
+

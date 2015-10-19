@@ -1,0 +1,19 @@
+<table class="table table-hover">
+<thead>
+	<tr>
+		<th>#</th>
+		<th>Project</th>
+		<th>Pledge</th>
+		<th>Estimated Delivery</th>
+	</tr>
+</thead>
+	<tbody>
+		<% if pledges.any?  %>
+			<% pledges.each do |pledge| %>
+			<%= render 'pledge', pledge: pledge %>
+			<% end %>
+		<% else %>
+		<tr><td colspan="4">No Pledges available</td></tr>
+		<% end %>
+	</tbody>
+</table>

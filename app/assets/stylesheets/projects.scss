@@ -1,0 +1,114 @@
+.project-intro {
+  background-color: #f7fafa;
+  border-bottom: 1px solid #d9d9de;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.project-title, .project-title a {
+  font-size: 32px;
+  line-height: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: normal;
+  margin: 0;
+  color: #333333 !important;
+}
+
+.project-subtitle {
+  margin-bottom: 40px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.project-stats{ 
+  margin-bottom: 40px;
+  font-weight: bold;
+  .val {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  
+  .lab{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+.project-time {
+  color: #828587;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+.project-small-description {
+  font-size: 22px;
+  margin-top: 40px;
+  line-height: 30px;
+}
+
+.reward:link, .reward:visited, .reward:hover, .reward:active{
+  color: #0f2105;
+}
+
+.reward-box {
+  background: #f7fafa;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  .pledge {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .backers {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .name {
+    margin-top: 20px;
+    color: $brand-primary;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .description {
+    position: relative;
+    margin-bottom: 20px;
+    height: auto;
+    font-size: 14px;
+  }
+  .time {
+    font-size: 14px;
+  }
+}
+
+.reward-hover {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  color: white;
+  text-align: center;
+  padding-top: 36%;
+  font-size: 30px;
+  margin-left: -20px;
+  border-radius: 6px;
+  background-color: $brand-primary;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.reward-box:hover {
+  .reward-hover {
+
+    opacity: .9;
+    font-size: 24px;
+
+  }
+}

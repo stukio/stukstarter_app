@@ -1,0 +1,29 @@
+<% funded = project.funding_percentage  %>
+<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="project-box">
+	<%= link_to image_tag(project.image_url, alt: project.name, width: '100%', height: '200px'), project_path(project) %>
+<div class="description-box">
+	<div class="title">
+	<%= link_to project.name, "#" %>
+	</div>
+	<div class="description">
+		<%= project.short_description %>
+	</div>
+	<div class="project-bar">
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<%= funded %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= funded %>">
+				<span class="sr-only"><%= funded %> Complete (Success)</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="stats">
+		<ul>
+			<li><%= funded %>% <br><span class="label">funded</span></li>
+			<li>$<%= project.total_backed_amount  %><br><span class="label">pledged</span></li></li>
+			<li><%= project.days_to_go %> <br><span class="label">days to go</span></li></li></li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>

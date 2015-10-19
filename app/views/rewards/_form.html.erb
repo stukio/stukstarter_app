@@ -1,0 +1,13 @@
+<%= simple_form_for([@project, @reward], html: { class: "form-horizontal" }) do |f| %>
+	
+	<%= f.input :description %>
+	<%= f.input :value %>
+	<%= f.input :shipping %>
+	<%= f.input :number_available %>
+	<%= f.input :estimated_delivery, :as => :date_picker %>
+	
+	<div class="actions">
+		<%= f.button :submit %>	
+	</div>
+	
+<% end %>

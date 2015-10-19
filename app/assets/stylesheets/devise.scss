@@ -1,0 +1,29 @@
+.signup-box {
+  border: 1px solid #d9d9de;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 60px;
+
+  h2 {
+    font-weight: normal;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  input[type='checkbox'] {
+    width: inherit;
+  }
+
+  label[for='user_remember_me'] {
+    font-size: 14px;
+    font-weight: normal;
+    color: gray;
+  }
+}
+

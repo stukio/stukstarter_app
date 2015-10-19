@@ -1,0 +1,19 @@
+<%= simple_form_for @pledge, url: {controller: :payments, action: :create }, method: :post do |f| %>
+	<%= f.input :amount, :as => :hidden, input_html: { :value => @amount} %>
+	<%= f.input :reward_id, :as => :hidden, input_html: { :value => @reward.id} %>
+	<fieldset>
+		<legend>Card Information</legend>
+		<div id="card-fields"></div>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Billing Address</legend>
+		<%= f.input :name %>
+		<%= f.input :address %>
+		<%= f.input :city %>
+		<%= f.input :country, as: :string %>
+		<%= f.input :postal_code %>
+	</fieldset>
+	<%= f.submit "Pledge", class: "btn btn-success btn-md pull-right" %>
+<% end %>
+

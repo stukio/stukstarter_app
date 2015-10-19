@@ -1,0 +1,29 @@
+.pledge-box {
+ 	border: 1px solid #d9d9de;
+ 	border-radius: 6px;
+ 	padding: 30px;
+
+ 	h1 {
+  		color: #2bde73;
+  		font-size: 32px;
+  		font-weight: bold;
+  		line-height: 30px;
+  		margin-bottom: 15px;
+  		margin-top: 0;
+	}
+
+	h2 {
+	  	display: block;
+	  	font-size: 18px;
+	  	font-weight: bold;
+		color: #0f2105;
+	}	
+
+	label {
+	  	width: 100% !important;
+	}
+
+	p {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,10 @@
+<%= simple_form_for(@project, html: { class: 'form-horizontal' }) do |f| %>
+	<%= f.input :name %>
+	<%= f.input :short_description %>
+	<%= f.input :description, as: :wysihtml5 %>
+	<%= f.input :goal %>
+	<%= f.input :image_url %>
+	<div class="actions">
+		<%= f.button :submit %>
+	</div>
+<% end %>

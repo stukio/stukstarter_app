@@ -8,7 +8,7 @@
 <%= link_to "#", class: "reward" do %>
 	<div class="reward-box">
 		<p class="pledge">Pledge $<%= reward.value %> or more</p>
-		<p class="backers"><span class="primary-color"><i class="fa fa-cog"></i></span><%= reward.backers.count %> backers</p>
+		<p class="backers"><span class="primary-color"><i class="fa fa-cog"></i></span> <%= reward.backers.count %> backers</p>
 		<p class="description"><%= reward.description %></p>
 		<p class="time"><span class="grey">Estimated delivery:</span><br><%= reward.estimated_delivery %></p>
 		<div class="reward-hover">

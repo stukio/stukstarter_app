@@ -50,7 +50,7 @@ class ProjectsController < ApplicationController
 	def destroy
 		@project.destroy
 		respond_to do |format|
-				format.html { redirect_to project_path, notice: "Project was succesfully Destroyed!"}
+				format.html { redirect_to root_path, notice: "Project was succesfully Destroyed!"}
 				format.json { head :no_content }
 		end
 	end

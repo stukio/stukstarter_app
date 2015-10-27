@@ -25,6 +25,7 @@ class Project < ActiveRecord::Base
 	before_validation :start_project, :on => :create
 	validates :name, :short_description, :description, :image_url, :expiration_date, :goal, presence: true
  	after_create :charge_backers_if_funded
+ 	#before_validation :charge_backers_if_funded, :on => :create
 
 	def pledges
 		rewards.flat_map(&:pledges)
@@ -94,4 +95,5 @@ class Project < ActiveRecord::Base
 
 
 end
+
 

@@ -32,7 +32,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       ##Customer ID
       t.string :customer_id
-
       
       t.timestamps null: false
     end

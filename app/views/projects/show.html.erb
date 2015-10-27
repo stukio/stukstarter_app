@@ -40,7 +40,7 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h3 class="project-subtitle">About this project</h3>
-			<p><%= @project.description %></p>
+			<p><%= raw @project.description %></p>
 		</div>
 		<div class="col-md-4">
 			<p><%= render @rewards %></p>
